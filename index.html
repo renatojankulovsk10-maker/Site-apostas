@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R10 APOSTAS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+    <div class="titulo">
+        <h1 class="tituloimagem">R10 APOSTAS, SEU SITE DE DIVERÇÕES!
+            <p>Jogue com responsabilidade. <br> Proibido para menores de 18 anos.</p>
+        </h1>
+    </div>
+
+    <div id="calculadora">
+        <label class="caixa-nome" for="valor">Valor da aposta (R$)</label>
+        <input class="caixa-texto" type="number" id="valor" placeholder="Ex: 10"><br><br>
+
+        <p id="resultado" style="font-weight: bold; font-size: 18px;">Total Acumulado:</p>
+    </div>
+
+    <button onclick="mostrarjogos()" class="botao1">Jogos de hoje</button><br>
+    <div id="lista-jogos" style="display: none;">
+
+        <button onclick="mostrarapostas('apostas1')">Nacional X Santa Luzia</button><br>
+        <div id="apostas1" style="display: none;">
+            <button onclick="contar(event)" class="botao-apostas">Casa 1.04</button>
+            <button onclick="contar(event)" class="botao-apostas">Fora 10.0</button>
+        </div>
+        <button onclick="mostrarapostas('apostas2')">Matadouro X Vasco Ema</button><br>
+        <div id="apostas2" style="display: none;">
+            <button onclick="contar(event)" class="botao-apostas">Casa 1.90</button>
+            <button onclick="contar(event)" class="botao-apostas">Fora 3.20</button>
+        </div>
+        <button onclick="mostrarapostas('apostas3')">Peladeiros X Zumdão</button><br>
+        <div id="apostas3" style="display: none;">
+            <button onclick="contar(event)" class="botao-apostas">Casa 1.30</button>
+            <button onclick="contar(event)" class="botao-apostas">Fora 2.20</button>
+
+        </div>
+        <button onclick="mostrarapostas('apostas4')">Pegada Jovem X Os Zebras</button>
+        <div id="apostas4" style="display: none;">
+            <button onclick="contar(event)" class="botao-apostas">Casa 1.08</button>
+            <button onclick="contar(event)" class="botao-apostas">Fora 5.20</button>
+        </div>
+
+
+
+
+
+</body>
+
+<script src="script.js">
+
+</script>
+
+</html>
